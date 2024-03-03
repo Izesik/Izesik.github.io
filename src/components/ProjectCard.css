@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
+.project-card-wrapper {
+    width: 200px; /* Initial width */
+    height: 175px;
+    margin: 10px;
+  }
+  
+  .project-card {
+    width: 100%;
+    height: 100%;
+    transition: width 0.5s;
+    background: linear-gradient(90deg, #c3e1fc, white);
+    border-radius: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+  }
+  
+  .project-card-wrapper:hover .project-card {
+    width: 565%; /* Expanded width */
+  }
+  
+  /* Other styles remain the same */
+  
+  .project-card:hover .content {
+    opacity: 1;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-image {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    margin-bottom: 10px; /* Add some space between the image and the text */
+    transition: opacity 0.5s, visibility 0.5s; /* Smooth transition for the opacity */
+  }
+
+  .project-card-wrapper:hover .project-image {
+    opacity: 0; /* Fade out the image on hover */
+    visibility: hidden;
+  }
+  
+  .title {
+    opacity: 0;
+    display: none;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+  }
+
+  .project-card:hover .title {
+    display: block;
+  }
+
+  .tags {
+    opacity: 0;
+    display: none;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .project-card:hover .tags {
+    display: flex;
+  }
+  
+  .description {
+    opacity: 0;
+    display: none;
+    text-align: left;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+  }
+  
+  .project-card:hover .description {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .description, .tags, .title {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 0.5s; /* Adjust this to match the duration of the card expansion */
+  }
+  
+  
