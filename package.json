@@ -1,7 +1,7 @@
 {
   "name": "portfolio-site",
   "version": "0.1.0",
-  "homepage": "https://Izesik.github.io",
+  "homepage": "https://isaacnunez.com/",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.12.1",
