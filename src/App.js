@@ -1,6 +1,5 @@
 import './App.css';
-import { Box, ThemeProvider } from '@mui/material';
-import Homepage from './components/Homepage';
+import Homepage from './components/Homepage/Homepage';
 
 function App() {
   return (

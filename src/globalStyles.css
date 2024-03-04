@@ -1,0 +1,18 @@
+.Button-contained {
+   /* Custom styles for your contained button */
+   background-color: #9DB4C0; /* Example background color */
+   color: white; /* Example text color */
+   box-shadow: none; /* Remove the default box-shadow if desired */
+   font-family: 'Overpass', sans-serif;
+   font-weight: bold;
+   justify-content: center;
+   padding-top:8px;
+   /* ... other custom styles ... */
+  }
+  
+
+  .Button-contained:hover {
+    background-color: #234567; /* Darker background color on hover */
+    /* ... other hover styles ... */
+  }
+

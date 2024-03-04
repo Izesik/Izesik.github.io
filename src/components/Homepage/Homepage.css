@@ -1,0 +1,60 @@
+/* HomePage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+h1 {
+    font-size: 3rem; /* Adjust the size as needed */
+    color: #333; /* Change the color to match your design */
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+.project-title {
+    font-family: 'Overpass', sans-serif !important;
+    font-weight: bold !important;
+}
+
+.subtitle {
+  font-family: 'Overpass', sans-serif !important;
+}
+
+.button {
+  background-color: transparent;
+  color: #94A6B8;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  color: #367abf;
+}
+
+.arrow {
+  transition: margin-left 0.3s;
+  margin-left: 5px;
+}
+
+.button:hover .arrow {
+  margin-left: 20px;
+}
+
+
+.box .name {
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.box .subtitle {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+}

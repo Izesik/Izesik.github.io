@@ -1,0 +1,12 @@
+.social-icon {
+    color: #94A6B8;
+    size: 4rem;
+}
+
+.social-icon:hover {
+    color: #367abf;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
