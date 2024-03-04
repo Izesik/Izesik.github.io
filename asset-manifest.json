@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1a6a6ae.css",
-    "main.js": "/static/js/main.c3302ba5.js",
+    "main.css": "/static/css/main.5fcdbc10.css",
+    "main.js": "/static/js/main.be6e1f54.js",
     "static/js/453.19a46213.chunk.js": "/static/js/453.19a46213.chunk.js",
     "static/media/GenshinImpactCodeFinderIcon.png": "/static/media/GenshinImpactCodeFinderIcon.02117c37a33aad091b64.png",
     "index.html": "/index.html",
-    "main.b1a6a6ae.css.map": "/static/css/main.b1a6a6ae.css.map",
-    "main.c3302ba5.js.map": "/static/js/main.c3302ba5.js.map",
+    "main.5fcdbc10.css.map": "/static/css/main.5fcdbc10.css.map",
+    "main.be6e1f54.js.map": "/static/js/main.be6e1f54.js.map",
     "453.19a46213.chunk.js.map": "/static/js/453.19a46213.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1a6a6ae.css",
-    "static/js/main.c3302ba5.js"
+    "static/css/main.5fcdbc10.css",
+    "static/js/main.be6e1f54.js"
   ]
 }
