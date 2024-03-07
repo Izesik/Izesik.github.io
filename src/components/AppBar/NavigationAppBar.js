@@ -9,7 +9,7 @@ const NavigationAppBar = () => {
     <>
       <AppBar id="about" position="static" sx={{ background: '#0D1F2D', boxShadow: 3, }}>
       <Toolbar disableGutters sx={{ position: 'fixed', top: 0, right: 50, justifyContent: 'flex-end', paddingY: 1  }}>
-            <Box sx={{ display: 'flex', gap: 2, background: 'transparent', paddingX: 3, paddingY: 0.5, flexGrow: 1, justifyContent: 'right' }}>
+            <Box className="appbarbox" sx={{ display: 'flex', gap: 2, background: 'transparent', paddingX: 3, paddingY: 0.5, flexGrow: 1, justifyContent: 'right' }}>
               <IconContext.Provider value={{ className: "social-icon", size: 25 }}>
                 <a href="https://github.com/Izesik" target="_blank" rel="noopener noreferrer"><FaGithub  /></a>
                 <a href="https://www.linkedin.com/in/isaac-nunez-8816a4234/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -20,11 +20,11 @@ const NavigationAppBar = () => {
           </Toolbar>
         <Container>
           <Toolbar disableGutters sx={{ justifyContent: 'center', paddingY: 1 }}>
-            <Box sx={{ display: 'flex', gap: 2, boxShadow: '0px 14px 16px -3px rgba(0,0,0,0.2)', border: '3px solid rgba(54, 122, 191, 0.56)', borderRadius: '50px', background: 'rgba(255,255,255,0.1)', paddingX: 3, paddingY: 0.5 }}>
-              <a href={'#about'}><Button color="inherit" sx={{ color: 'white', borderRadius: '30px' }}>About</Button></a>
-              <a href={'#experience'}><Button color="inherit" sx={{ color: 'white', borderRadius: '30px' }}>Experience</Button></a>
-              <a href={'#portfolio'}><Button color="inherit" sx={{ color: 'white', borderRadius: '30px' }}>Portfolio</Button></a>
-              <a href={'#contact'}><Button color="inherit" sx={{ color: 'white', borderRadius: '30px' }}>Contact</Button></a>
+            <Box sx={{ display: 'flex', gap: 2, boxShadow: '0px 14px 16px -3px rgba(0,0,0,0.2)', border: '2px solid rgba(54, 122, 191, 0.56)', borderRadius: '50px', background: 'rgba(255,255,255,0.1)', paddingX: 1, paddingY: 0.5}}>
+              <a href={'#about'}><Button color="inherit" sx={{ color: 'white', borderRadius: '30px', fontFamily: 'Overpass, sans serif', display: 'flex', alignItems: 'center', justifycontent: 'center', paddingTop: '10px' }}>About</Button></a>
+              <a href={'#experience'}><Button color="inherit" sx={{ color: 'white', borderRadius: '30px', fontFamily: 'Overpass, sans serif', display: 'flex', alignItems: 'center', justifycontent: 'center', paddingTop: '10px' }}>Experience</Button></a>
+              <a href={'#portfolio'}><Button color="inherit" sx={{ color: 'white', borderRadius: '30px', fontFamily: 'Overpass, sans serif', display: 'flex', alignItems: 'center', justifycontent: 'center', paddingTop: '10px'}}>Portfolio</Button></a>
+              <a href={'#contact'}><Button color="inherit" sx={{ color: 'white', borderRadius: '30px', fontFamily: 'Overpass, sans serif', display: 'flex', alignItems: 'center', justifycontent: 'center', paddingTop: '10px'}}>Contact</Button></a>
             </Box>
           </Toolbar>
          
@@ -52,7 +52,7 @@ const NavigationAppBar = () => {
         Today, I proudly boast a handful of independent projects that mark significant milestones in my evolving career.
         </Typography>
         <Typography maxWidth="700px" variant='subtitle1' color='#94A6B8' align='left' className="project-title" sx={{ marginTop: 2}}>
-        Currently pursuing my Computer Science degree and I've found my sweet spot in writing code that not only makes games fun but also keeps them running smoothly behind the scenes.
+        While pursuing my Computer Science degree, I've found my sweet spot in writing code that not only makes games fun but also keeps them running smoothly behind the scenes.
          Imagine crafting a game where every line of code feels like painting on a canvas, both visually stunning and technically sound. 
          That's what I aim for &#8212; creating software that's not just impressive to look at, but also a joy to work with. 
         </Typography>

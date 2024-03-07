@@ -1,7 +1,16 @@
 .experience-card-wrapper {
     width: 500px ; /* Initial width */
-    height: 300px ;
+    height: auto ;
     margin: 10px;
+}
+
+@media (max-width: 767px) {
+    .experience-card-wrapper {
+        width: auto; /* Initial width */
+        height: auto ;
+        margin: 10px;
+        justify-content: center;
+    }
 }
 
 .experience-card-wrapper .experience-card {
@@ -26,10 +35,42 @@
     color: #fff;
 }
 
+.experience-card .experience-subtitle {
+    text-align: left;
+    font-weight: bold;
+    font-size: .90rem;
+    opacity: 50%;
+    font-family: 'Overpass', sans-serif !important;
+    color: #94A6B8;
+}
+
+.experience-card .experience-company-title {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif !important;
+}
+
+.experience-company-title:hover {
+    color: #367abf;
+    text-decoration: none;
+}
+
+.company-arrow {
+    transition: margin-left 0.3s, margin-bottom 0.3s;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+
+.experience-company-title:hover .company-arrow {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
 .experience-card .experience-description {
     text-align: left;
     font-family: 'Overpass', sans-serif;
     font-weight: 300;
+    max-width:400px;
     color: #94A6B8;
 }
 
@@ -39,3 +80,4 @@
     font-weight: 600;
     color: #636e7a;
 }
+a:link { text-decoration: none; }

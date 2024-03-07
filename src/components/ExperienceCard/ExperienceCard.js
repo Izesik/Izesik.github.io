@@ -1,33 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, Typography, CardActionArea, Box, Button, Modal, Link} from '@mui/material';
 import './ExperienceCard.css';
 
+const ExperienceCard = ({ JobTitle, SubJobTitle, Company, description, tags, StartDate, EndDate }) => {
 
-const getTagColor = (tagName) => {
-    const tagColors = {
-        'JAVASCRIPT': '#f6ec7c',
-        'C#': '#4b922c',
-        'UNITY': '#5095cf',
-        'JSON': '#242421',
-        'UI/UX': '#c7c7c7',
-        'SQL': '#9580a5',
-        'DISCORD.JS': '#3a62ad',
-        'WEB SCRAPING': '#d64c8a',
-        'PYTHON': '#e0cd2f',
-    };
-    return tagColors[tagName];
-};
-
-const ExperienceCard = ({ JobTitle, Company, description, tags, StartDate, EndDate }) => {
+    var [givenSubJobTitle] = useState('');
+    givenSubJobTitle = SubJobTitle;
 
     return (
         <div className="experience-card-wrapper">
             <Card className="experience-card">
-                <CardActionArea>
+                <CardActionArea href="https://www.thecgroup.com/" target='_blank' rel='noreferrer'>
                     <CardContent>
                         <Typography className="experience-title" >
-                            {JobTitle} &bull; <Link href="https://www.thecgroup.com/" underline="none" color="#367abf">{Company}</Link>
+                            {JobTitle} &bull; <a className="experience-company-title" href="https://www.thecgroup.com/" >{Company} <span className='company-arrow'>&#10230;</span></a>
                         </Typography>
+                        {(givenSubJobTitle) && <Typography className="experience-subtitle">{SubJobTitle}</Typography>}
                         <Typography className="experience-description" sx={{marginTop: 2}}>
                             {description}
                         </Typography>
@@ -38,13 +26,7 @@ const ExperienceCard = ({ JobTitle, Company, description, tags, StartDate, EndDa
                     </CardContent>
                 </CardActionArea>
             </Card>
-
-
-
         </div>
-
-
-
     );
 };
 

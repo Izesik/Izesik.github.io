@@ -1,0 +1,27 @@
+{
+    "In Development": {
+        "background": "rgba(45, 142, 191,.2)",
+        "border": "0.5px solid rgba(54, 122, 191, 0.56)",
+        "text": "rgba(45, 142, 191, 1)"
+    },
+    "Completed": {
+        "background": "rgba(45, 248, 191, .2)",
+        "border": "0.5px solid rgba(45, 248, 191, 0.56)",
+        "text": "rgba(45, 248, 191, 1)"
+    },
+    "Planning": {
+        "background": "rgba(248, 191, 45, .2)",
+        "border": "0.5px solid rgba(248, 191, 45, 0.56)",
+        "text": "rgba(248, 191, 45, 1)"
+    },
+    "Cancelled": {
+        "background": "rgba(248, 45, 45, .2)",
+        "border": "0.5px solid rgba(248, 45, 45, 0.56)",
+        "text": "rgba(248, 45, 45, 1)"
+    },
+    "On Hold": {
+        "background": "rgba(160, 160, 160, .2)",
+        "border": "0.5px solid rgba(160, 160, 160, 0.56)",
+        "text": "rgba(160, 160, 160, 1)"
+    }
+}

@@ -22,6 +22,8 @@ h1 {
   font-family: 'Overpass', sans-serif !important;
 }
 
+
+
 .button {
   background-color: transparent;
   color: #94A6B8;
@@ -57,4 +59,45 @@ h1 {
 .box .subtitle {
     font-family: 'Overpass', sans-serif;
     font-weight: 500;
+}
+
+.appbarbox-homepage {
+  opacity: 0;
+}
+
+.social-icon-homepage {
+  color: #94A6B8;
+  size: 4rem;
+}
+
+.social-icon-homepage:hover {
+  color: #367abf;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width as needed */
+  grid-auto-rows: 175px; /* Set row height */
+  grid-gap: 10px; /* Set gap between grid items */
+  gap: 2px;
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width as needed */
+    grid-auto-rows: 175px; /* Set row height */
+    grid-gap: 10px; /* Set gap between grid items */
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .appbarbox-homepage {
+    opacity: 100;
+  }
+  
+  .social-icon-homepage {
+    color: #94A6B8;
+    size: 4rem;
+  }
 }

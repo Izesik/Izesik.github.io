@@ -7,6 +7,16 @@
     color: #367abf;
 }
 
+.appbarbox {
+    opacity: 100;
+}
+
+@media (max-width: 767px) {
+    .appbarbox {
+        opacity: 0;
+    }
+}
+
 html {
     scroll-behavior: smooth;
   }

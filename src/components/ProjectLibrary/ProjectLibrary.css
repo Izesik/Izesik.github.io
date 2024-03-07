@@ -1,0 +1,151 @@
+.library-card-wrapper {
+    display: flex;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    margin: 5px;
+  }
+
+  .library-card-wrapper .library-card {
+    display: flex;
+    flex-grow: 1;
+    width: 98.7%; /* Expand to a specific width */
+    height: 100%;
+    transition: width 0.5s;
+    background: rgba(2, 41, 79, 0.2);
+    border: 1px solid rgba(54, 64, 73, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+  }
+  
+  .library-card-wrapper:hover .library-card {
+    width: auto; /* Expand to a specific width */
+  }
+
+  .library-card-wrapper .library-card .project-image {
+    object-fit: cover;
+    width: 100%; /* Set a fixed width */
+    height: 225px;
+    align-items: center;
+    transition: opacity 0.5s, height 0.5s; /* Smooth transition for the opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    display: inline;
+  }
+
+  .library-card .Button-card {
+    opacity: 100;
+    display: inline;
+    background-color: transparent;
+    color: #94A6B8;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    justify-content: left;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-right: 30px;
+   }
+
+   .Button-card:hover {
+    color: #367abf;
+   }
+
+   .Button-card .card-arrow {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .Button-card:hover .card-arrow {
+    transform: translateX(20px);
+  }
+
+   .back-button {
+    background-color: transparent;
+    color: #94A6B8;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    justify-content: left;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    color: #367abf;
+  }
+  
+  .back-arrow {
+    transition: transform 0.3s ease-out;
+    margin-right: 5px;
+  }
+  
+  .back-button:hover .back-arrow {
+    transform: translateX(-20px) 
+  }
+
+  .library-card-wrapper:hover .project-image {
+    opacity: 0.6; /* Fade out the image on hover */
+  }
+
+  .library-card-wrapper .library-card .title {
+    opacity: 100;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif !important;
+    color: #fff;
+  }
+
+  .library-card-wrapper .library-card .description {
+    opacity: 100;
+    display: block;
+    text-align: left;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    color: #94A6B8;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.98);
+  }
+
+  .library-card-wrapper .library-card .status {
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif !important;
+    opacity: 100;
+    display: inline;
+    text-shadow: 0px 0px 0px #000000;
+  }
+
+  .library-card-wrapper .library-card .year {
+    opacity: 100;
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif !important;
+    color: #94A6B8;
+    text-shadow: 0px 1px 2px #000000;
+    
+  }
+
+  @media (max-width: 767px) {
+    .library-card-wrapper .library-card .project-image {
+      object-fit: cover;
+      width: 100%; /* Set a fixed width */
+      height: 100%;
+      align-items: center;
+      transition: opacity 0.5s, height 0.5s; /* Smooth transition for the opacity */
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.4;
+      display: inline;
+    }
+  }
+  

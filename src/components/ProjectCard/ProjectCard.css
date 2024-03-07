@@ -1,11 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  grid-auto-rows: 175px; 
+  grid-gap: 5px;
+}
+
 .project-card-wrapper {
     width: 200px ; /* Initial width */
     height: 175px ;
     margin: 10px;
+    transition: width 0.5s;
   }
+
+  .project-card-wrapper:hover {
+    width: 98.7%;
+  }
+  
   
   .project-card-wrapper .project-card {
     width: 100% ;
@@ -17,10 +30,28 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     overflow: hidden;
   }
+
+  .project-card-wrapper:hover .project-card {
+    width: auto ; /* Expanded width */
+  }
+
+/* Hover effect for vertical desktop width */
+@media (min-width: 768px) and (max-width: 1200px) {
+  
+  .project-card-wrapper {
+    width: 200px ; /* Initial width */
+    height: 175px ;
+    margin: 10px;
+    transition: width 0.5s;
+  }
+  .project-card-wrapper:hover {
+    width: 98.7%;
+  }
   
   .project-card-wrapper:hover .project-card {
-    width: 565% ; /* Expanded width */
+    width: auto; /* Expand to a specific width */
   }
+}
   
   /* Other styles remain the same */
   
@@ -31,23 +62,39 @@
   .project-card .Button-contained {
     opacity: 0;
     display: none;
-    background-color: #9DB4C0; 
-    color: white;
-    box-shadow: none; 
+    background-color: transparent;
+    color: #94A6B8;
     font-family: 'Overpass', sans-serif;
     font-weight: bold;
-    justify-content: center;
-    padding-top:8px;
+    text-align: left;
+    justify-content: left;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    margin-right: 40px;
    
    }
    
    .project-card .Button-contained:hover {
-     background-color: #234567; /* Darker background color on hover */
-     /* ... other hover styles ... */
+      color: #367abf;
    }
 
    .project-card:hover .Button-contained {
     display: inline;
+    text-align: right;
+    justify-content: right;
+   }
+
+   .card-arrow {
+    transition: transform 0.3s;
+    display: inline-block;
+    margin-left: 5px;
+   }
+
+   .Button-contained:hover .card-arrow {
+    transform: translateX(20px);
    }
 
 
@@ -62,7 +109,7 @@
     width: 100%; /* Set a fixed width */
     height: 175px;
     align-items: center;
-    transition: opacity 0.5s; /* Smooth transition for the opacity */
+    transition: opacity 0.5s, height 0.5s; /* Smooth transition for the opacity */
     position: absolute;
     top: 0;
     left: 0;
@@ -90,6 +137,7 @@
     display: none;
     justify-content: start;
     gap: 10px;
+    font-family: 'Overpass', sans-serif;
   }
 
   .project-card:hover .tags {
@@ -141,5 +189,87 @@
     font-family: 'Overpass', sans-serif !important;
     color: #fff;
   }
+
+  /* Mobile*/
+@media (max-width: 767px) {
+
+  .project-card-wrapper {
+    display: flex;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    margin: 5px;
+  }
+
+  .project-card-wrapper .project-card {
+    display: flex;
+    flex-grow: 1;
+    width: 98.7%; /* Expand to a specific width */
+  }
+  .project-card-wrapper:hover {
+    width: auto;
+  }
+  .project-card-wrapper:hover .project-card {
+    width: 98.7%; /* Expand to a specific width */
+  }
+  .project-card-wrapper .project-card .project-image {
+    object-fit: cover;
+    width: 100%; /* Set a fixed width */
+    height: 100%;
+    align-items: center;
+    transition: opacity 0.5s, height 0.5s; /* Smooth transition for the opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+  }
+  .project-card-wrapper .project-card .title {
+    opacity: 100;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif !important;
+    color: #fff;
+  }
+  .project-card-wrapper .project-card .tags {
+    opacity: 0;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+  }
+  .project-card-wrapper .project-card .description {
+    opacity: 100;
+    display: block;
+    text-align: left;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    color: #94A6B8;
+  }
+  .project-card .Button-contained {
+    opacity: 100;
+    display: inline;
+    background-color: transparent;
+    color: #94A6B8;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    justify-content: left;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    margin-top: 5px;
+   }
+   .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-auto-rows: 175px; 
+    grid-gap: 5px;
+    gap: 4;
+  }
+}
   
   

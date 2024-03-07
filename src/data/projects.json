@@ -1,0 +1,102 @@
+[
+    {
+      "title": "GameCache",
+      "description": "A game database mobile app that allows you to track, review, and search any video game. Coming Soon.",
+      "tags": ["React Native", "Tamagui", "JavaScript", "SQL", "IGDB API"],
+      "year": "Expected 2025",
+      "status": "Planning",
+      "link": "",
+      "linkName": "",
+      "imageUrl": "images/GameCache_TempCover.webp",
+      "featured": false
+    },
+    {
+      "title": "Compressed Cobblestone",
+      "description": "A 1.20.1 Minecraft mod that allows users to compress Cobblestone up to 4 times the original. \nI always wanted to get into modding Minecraft and after seeing no such mods for the version I use, I decided to jump in and learn. ",
+      "tags": ["Java", "Minecraft Forge", "Gradle", "VSCode"],
+      "year": "Expected Summer 2024",
+      "status": "Planning",
+      "link": "",
+      "linkName": "",
+      "imageUrl": "images/CobblestoneCover.webp",
+      "featured": false
+    },
+    {
+      "title": "Craft Monitor",
+      "description": "A Python-based Discord bot that provides real-time updates on a given Minecraft server. We designed this bot with the intention of providing users in our Discord server constant information about the public Minecraft server we had running.",
+      "tags": ["Python", "SQL", "JavaScript"],
+      "year": "2024",
+      "status": "In Development",
+      "link": "https://github.com/Izesik/CraftMonitor-Discord-Bot",
+      "linkName": "Github",
+      "imageUrl": "images/CraftMonitorCover.png",
+      "featured": false
+    },
+    {
+      "title": "Personal Website v1",
+      "description": "I built my very first personal website to showcase my projects and skills. Working with React, CSS, and HTML, I learned so much about creating engaging and responsive web interfaces. \nThis project really helped me sharpen my skills and dive deeper into web development. \n Oh and you're on it right now!",
+      "tags": ["React.js", "Material UI", "JavaScript"],
+      "year": "2024",
+      "status": "Completed",
+      "link": "https://isaacnunez.com/",
+      "linkName": "isaacnunez.com",
+      "imageUrl": "images/PersonalWebsiteCover.webp",
+      "featured": false
+    },
+    {
+      "title": "Impact Code Finder",
+      "description": "As a Genshin Impact player, I created a Discord bot to ease the pain of finding and keeping track of promo codes. \nThe bot scrapes a website for the latest codes, stores them in a database, and announces them in a Discord server before they expire. \nThrough this project, I gained valuable experience with SQL and web scraping techniques.",
+      "tags": ["JavaScript", "SQL", "Discord.js", "Web Scraping"],
+      "year": "2024",
+      "status": "Completed",
+      "link": "https://isaacnunez.com/Impact-Code-Finder-Site/",
+      "linkName": "Impact Code Finder Site",
+      "imageUrl": "images/ImpactCodeFinder.png",
+      "featured": true
+    },
+    {
+      "title": "C.H.A.I.R.S Demo",
+      "description": "A Unity project demo with the objective to showcase the potential concept of a survival horror experience with a unique twist. \nThis project was a deep dive into game design, where I explored new ideas and concepts. I also got to grips with JSON, which expanded my skills and made me a more versatile game developer. This project was a big step in my game development journey, showing me new possibilities and pushing me to be more creative.",
+      "tags": ["C#", "Unity", "JSON", "UI/UX"],
+      "year": "2023",
+      "status": "Completed",
+      "link": "https://github.com/Izesik/Chairs",
+      "linkName": "Github",
+      "imageUrl": "images/ChairsThumb.png",
+      "featured": true
+    },
+    {
+      "title": "Project Continuity",
+      "description": "A Unity educational multiplayer survival game. \n\nLearned and applied JSON for storing and retrieving item information and game data. Overcame initial hurdles with JSON, and ultimately improving Unity skills and data management. \nHoping to return to this project in the future.",
+      "tags": ["C#", "Unity", "JSON", "UI/UX", "SQL"],
+      "year": "2022",
+      "status": "On Hold",
+      "link": "https://github.com/IR-Studios/Continuity",
+      "linkName": "Github",
+      "imageUrl": "images/ContinuityCover.webp",
+      "featured": false
+    },
+    {
+      "title": "EAHS Guidance Mobile App",
+      "description": "A mobile application for my High School senior project that allows students to schedule appointments and contact their guidance counselors at EAHS. I learned a lot about Front-end and Back-end connectivity and design in this project. Unfortuntely due to the Pandemic, we never got to complete the project.",
+      "tags": ["JavaScript", "C#", "CSS", "HTML", "Bootstrap"],
+      "year": "2019",
+      "status": "Cancelled",
+      "link": "",
+      "linkName": "",
+      "imageUrl": "images/EAHSAppCover.png",
+      "featured": false
+    },
+    {
+      "title": "The Adventures Of Jack",
+      "description": "A 2.5D Unity Platformer. This was the first time I had ever touched code and to this day I like to go back and recreate this game and add a little bit more, just to see how much I've improved.",
+      "tags": ["C#", "Unity"],
+      "year": "2015",
+      "status": "Completed",
+      "link": "https://gamejolt.com/games/TAOJ/45342",
+      "linkName": "gamejolt.com",
+      "imageUrl": "images/TOAJ_Screenshot.png",
+      "featured": false
+    }
+  ]
+  
