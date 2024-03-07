@@ -1,18 +1,41 @@
-# Portfolio Website
+# Isaacnunez.com
+This is the first version of my personal website Isaacnunez.com built with React.js and Material UI and hosted on Github Pages
 
-This is my portfolio website, showcasing my projects and skills as a software engineer. 
+## Forking this repository
+While I made this website for my own personal portfolio, please feel free to use the code to help build your own. It's not the greatest template but it gets the job done. 
+All I ask is that you please provide proper credit where its due and link back to Isaacnunez.com. 
+> [!IMPORTANT]
+> **I did not build this site with the intention of it being a template so please refer to React and Material UI documentation for resources.**
 
-## Technologies Used
+## Installation and Set-up
+1. Fork repository and name it  **{yourusername}.github.io**
 
-- **React**: Built with React for a dynamic and interactive user experience.
-- **Material-UI**: Used Material-UI for the design components and styling.
-- **Overpass Typeface**: Utilized the Overpass typeface for a modern and professional look.
-- **GitHub Pages**: Hosted the website on GitHub Pages for easy access and sharing.
+2. Install and use the correct version of Node using NVM
+   
+   ```
+   nvm install
+   ```
 
-## Usage
+3. Install dependencies
 
-Feel free to explore the website to learn more about me, my projects, and my skills. You can visit the live site at [Izesik.Github.io](https://izesik.github.io/).
+   ```
+   npm install
+   ```
+   
+4. Run the development gaymen
 
-## Contributing
+   ```
+   npm start
+   ```
 
-If you have any suggestions or improvements for the website, please feel free to open an issue or submit a pull request.
+## Building and Running for production
+1. Change `homepage` in package.json to **{yourusername}.github.io**
+1. Deploy to gh-pages
+
+   ```
+   npm run deploy
+   ```
+   This will automatically run `npm run build` and `gh-pages -d build` for you
+
+2. Go to **{yourusername}.github.io** and see your live site!
+   
