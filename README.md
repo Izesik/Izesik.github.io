@@ -1,5 +1,9 @@
-# Isaacnunez.com
-This is the first version of my personal website Isaacnunez.com built with React.js and Material UI and hosted on Github Pages
+ <h1 align="center">Isaacnunez.com</h1>
+<h6 align="center"> 
+This is the first version of my personal website <a href="https://isaacnunez.com" target="_blank" rel="noreferrer">Isaacnunez.com</a> built with <a href="https://react.dev/" target="_blank" rel="noreferrer">React.js</a> and <a href="https://mui.com/material-ui/" target="_blank" rel="noreferrer">Material UI</a> and hosted on <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages </a>
+
+ 
+
 
 ![WebsiteRounded](https://github.com/Izesik/Izesik.github.io/assets/45981281/9b920e54-4d68-4f1e-929a-7392f0d76800)
 
